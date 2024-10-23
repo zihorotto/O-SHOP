@@ -295,4 +295,4 @@ This project uses **Okta OAuth 2.0** for user authentication. It allows users to
 
 ## License
 
-I created this project based on a Udemy course. Feel free to use and modify it according to your needs.
+I created this project based on a Udemy course. Feel free to use and modify it according to your needs. Additionally, you can populate the database tables by running the provided scripts, which are located in the db-scripts folder. Product images are also available for use, and they can be found in the assets folder.
