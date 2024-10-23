@@ -54,7 +54,8 @@ export class CheckoutComponent implements OnInit {
     private cartService: CartService,
     private checkoutService: CheckoutService,
     private router: Router
-  ) { }
+  ) {
+   }
 
   ngOnInit(): void {
     // setup Stipe payment form
@@ -164,12 +165,15 @@ export class CheckoutComponent implements OnInit {
     this.cardElement.on('change', (event: any) => {
       // get a handle to card-errors element
       this.dispayError = document.getElementById('card-errors');
-
+      this.dispayError.textContent = '';
+      
       if (event.complete) {
-        this.dispayError.textContent = '';
+      this.dispayError.textContent = '';
+
       } else if (event.error) {
         // show validation error to customer
         this.dispayError.textContent = event.error.message;
+        
       }
     });
   }

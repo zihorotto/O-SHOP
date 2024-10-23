@@ -75,7 +75,7 @@ export class ProductListComponent implements OnInit {
       this.currentCategoryName = this.route.snapshot.paramMap.get('name')!;
     } else {
       this.currentCategoryId = 1;
-      this.currentCategoryName = 'Books';
+      this.currentCategoryName = 'PlayStation 5';
     }
 
     //
